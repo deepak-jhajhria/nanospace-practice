@@ -13,7 +13,7 @@ const Hero = () => {
                 <div className="mt-6 sm:mt-8 lg:mt-11 lg:pt-0.5 flex items-center gap-2 md:gap-4 justify-center">
                     {HERO_SOCAL_LINK_LIST.map((item, index) => (
                         <Link key={index} to={item.url} target="_blank" aria-label="join over community">
-                            <img className="max-w-20 sm:max-w-[118px] w-full rounded-md object-contain" src={item.image} alt="logo" />
+                            <img className="max-w-20 sm:max-w-[118px] w-full rounded-md object-contain duration-300 hover:scale-105" src={item.image} alt="logo" />
                         </Link>
                     ))}
                 </div>
