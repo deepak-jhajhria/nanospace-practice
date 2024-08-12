@@ -24,7 +24,7 @@ const NavBar = () => {
     };
 
     return (
-        <nav className="bg-black bg-opacity-45 lg:bg-white lg:bg-opacity-5 shadow-nav lg:backdrop-blur-lg py-3 lg:py-0">
+        <nav className="bg-black bg-opacity-55 lg:bg-white lg:bg-opacity-5 shadow-nav lg:backdrop-blur-lg py-3 lg:py-0 relative z-30">
             <div className="container max-w-[1240px] flex items-center justify-between">
                 <Link onClick={handleClose} to="/">
                     <img className="h-10 w-32 md:h-12 md:w-[154px]" src={logo} alt="logo" width={154} height={48} />

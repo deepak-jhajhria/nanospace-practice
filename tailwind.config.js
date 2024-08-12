@@ -43,7 +43,7 @@ module.exports = {
         "nav": "0px 7px 10.9px 0px #0000002E",
       },
       backgroundImage: {
-        'hero': 'url(../src/assets/images/webp/hero-bg.webp)',
+        'hero': 'linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%);',
         'explore': 'url("../src/assets/images/webp/explore-bg.webp")',
         'black-gradient': 'linear-gradient(180deg, rgba(7, 11, 27, 0) 7.35%, #111111 75.74%)',
         'explore-gradient': 'linear-gradient(180deg, rgba(17, 17, 17, 0) 7.35%, #111111 75.74%)',
