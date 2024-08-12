@@ -32,11 +32,10 @@ const NavBar = () => {
                 <div className={`${isOpen ? "left-0" : "-left-full"} flex items-center max-lg:flex-col max-lg:fixed max-lg:justify-start max-lg:items-center max-lg:h-full max-lg:w-full max-lg:z-30 max-lg:top-0 max-lg:bg-black max-lg:pt-28 duration-300`}>
                     {NAV_LINK_LIST.map((item, index) => (
                         <Link
-                            aria-label={item.link}
                             onClick={handleClose}
                             to={item.url}
                             key={index}
-                            className="text-white font-saira text-base z-10 after:duration-300 !leading-156 relative after:absolute after:bg-light-white after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:size-0 hover:after:size-full after:z-0 py-4 lg:py-7 lg:px-4"
+                            className="text-white font-saira text-base z-10 after:duration-500 !leading-156 relative after:absolute after:bg-light-white after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:size-0 hover:after:size-full after:z-0 py-4 lg:py-7 lg:px-4"
                         >
                             <span className="relative z-10">{item.link}</span>
                         </Link>
