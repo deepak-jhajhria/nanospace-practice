@@ -6,8 +6,8 @@ const Icons = ({ icon, className = '', ...props }) => {
                     <path d="M7.3641 8.5L1 2.6664L2.81795 1L11 8.5L2.81795 16L1 14.3336L7.3641 8.5Z" fill="white" />
                 </g>
                 <defs>
-                    <filter id="filter0_d_1_36" x="0" y="0" width="14" height="19" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <filter id="filter0_d_1_36" x="0" y="0" width="14" height="19" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                         <feOffset dx="1" dy="1" />
                         <feGaussianBlur stdDeviation="1" />

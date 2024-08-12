@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -19,7 +21,7 @@ module.exports = {
         "custom-5xl": "66px",
       },
       colors: {
-        "white-gray": "#ccc",
+        "white-gray": "#cccccc",
         "blue": "#5893FF",
         "off-black": "#111111",
         "off-white": "#070B1B",
@@ -44,8 +46,20 @@ module.exports = {
         'hero': 'url(../src/assets/images/webp/hero-bg.webp)',
         'explore': 'url("../src/assets/images/webp/explore-bg.webp")',
         'black-gradient': 'linear-gradient(180deg, rgba(7, 11, 27, 0) 7.35%, #111111 75.74%)',
-      },
+        'explore-gradient': 'linear-gradient(180deg, rgba(17, 17, 17, 0) 7.35%, #111111 75.74%)',
+        'explore-card': 'linear-gradient(228.77deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 41.25%, rgba(255, 255, 255, 0) 63.78%, rgba(255, 255, 255, 0) 97.97%)',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-shadow': {
+          textShadow: '1px 1px 2px #00000040',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    }),
+  ],
 }
