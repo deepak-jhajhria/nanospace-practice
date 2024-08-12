@@ -9,7 +9,7 @@ const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        document.body.style.overflow = isOpen && window.innerWidth < 640 ? 'hidden' : 'auto';
+        document.body.style.overflow = isOpen && window.innerWidth < 1024 ? 'hidden' : 'auto';
         return () => {
             document.body.style.overflow = 'auto';
         };
@@ -20,11 +20,11 @@ const NavBar = () => {
     };
 
     const handleToggle = () => {
-        setIsOpen(prevState => !prevState);
+        setIsOpen(!isOpen);
     };
 
     return (
-        <nav className="bg-black bg-opacity-55 lg:bg-white lg:bg-opacity-5 shadow-nav lg:backdrop-blur-lg py-3 lg:py-0 relative z-30">
+        <nav className="bg-black bg-opacity-75 lg:bg-white lg:bg-opacity-5 shadow-nav lg:backdrop-blur-lg py-3 lg:py-0 relative z-30">
             <div className="container max-w-[1240px] flex items-center justify-between">
                 <Link onClick={handleClose} to="/">
                     <img className="h-10 w-32 md:h-12 md:w-[154px]" src={logo} alt="logo" width={154} height={48} />
@@ -35,7 +35,7 @@ const NavBar = () => {
                             onClick={handleClose}
                             to={item.url}
                             key={index}
-                            className="text-white font-saira text-base z-10 after:duration-500 !leading-156 relative after:absolute after:bg-light-white after:bottom-0 after:left-0 after:h-0 after:w-full hover:after:h-full after:z-0 py-4 lg:py-7 lg:px-4"
+                            className="nav-link"
                         >
                             <span className="relative z-10">{item.link}</span>
                         </Link>

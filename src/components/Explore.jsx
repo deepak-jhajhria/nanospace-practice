@@ -6,9 +6,10 @@ import { EXPLORE_DATA_LIST } from '../utils/helper'
 const Explore = () => {
 
     return (
-        <section className="bg-explore bg-cover bg-no-repeat bg-center bg-off-black relative overflow-hidden mb-20">
+        <section className="bg-explore bg-cover bg-no-repeat bg-center bg-off-black relative overflow-hidden z-0 pb-16 lg:pb-0">
             <span className="bg-explore-gradient w-full flex h-[204px] absolute top-0 left-0 rotate-180 z-10 pointer-events-none">
             </span>
+            <img className='lg:absolute top-36 xl:top-0 left-0 xl:left-10 max-w-[400px] md:max-w-[600px] xl:max-w-[880px] mx-auto w-full -mt-8 md:-mt-32 lg:mt-0 max-lg:translate-y-[28%] z-10 pointer-events-none' src={girl} alt="explore-girl" />
             <div className="container max-w-[1180px] relative z-20 pt-16 sm:pt-20 md:pt-32 lg:py-[176px]">
                 <div className="p-6 md:p-[50px] bg-explore-card rounded-[10px] flex flex-col bg-white bg-opacity-5 max-w-[672px] mx-auto lg:!mr-0 backdrop-blur-xl xl:backdrop-blur-[5px] relative overflow-hidden">
                     <span className='bg-white-gray flex w-[156px] h-14 rounded-full absolute top-16 left-20 blur-[90px] -z-10'></span>
@@ -25,8 +26,7 @@ const Explore = () => {
                 </div>
                 <img src={pet} className='size-[258px] absolute right-0 xl:-right-14 top-16 max-lg:hidden pointer-events-none' alt="explore-pet" />
             </div>
-            <img className='lg:absolute top-0 left-0 xl:left-10 max-w-[880px] mx-auto w-full max-lg:translate-y-[15%] -mt-16 sm:-mt-20 md:-mt-28 lg:mt-0 z-10 pointer-events-none' src={girl} alt="explore-girl" />
-            <span className='bg-blue flex w-[235px] h-[380px] rounded-full absolute top-80 left-44 blur-[250px] z-0 max-lg:hidden'></span>
+            <span className='bg-blue flex w-[125px] h-[380px] rounded-full absolute top-80 left-44 blur-[170px] z-0 max-lg:hidden'></span>
         </section>
     )
 }
